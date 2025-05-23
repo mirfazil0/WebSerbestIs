@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yer Haqqında - Discover Places</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .details-page {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .details-header {
+            position: relative;
+            height: 400px;
+            overflow: hidden;
+            border-radius: 16px;
+            margin-bottom: 40px;
+        }
+
+        .details-header img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .details-header h1 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 20px;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+            color: white;
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        .details-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+        }
+
+        .main-content {
+            background: white;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+
+        .sidebar {
+            background: white;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        .info-box {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #f8fafc;
+            border-radius: 8px;
+        }
+
+        .info-box h3 {
+            margin-top: 0;
+            color: #1e293b;
+        }
+
+        .back-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #3b82f6;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .back-btn:hover {
+            background: #2563eb;
+        }
+
+        .dark-mode .main-content,
+        .dark-mode .sidebar {
+            background: #2d2d2d;
+            color: #fff;
+        }
+
+        .dark-mode .info-box {
+            background: #1a1a1a;
+        }
+
+        .dark-mode .info-box h3 {
+            color: #fff;
+        }
+
+        @media (max-width: 768px) {
+            .details-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .details-header {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="details-page">
+        <a href="index.html" class="back-btn">← Geri qayıt</a>
+        <div class="details-header">
+            <img id="mainImage" src="" alt="">
+            <h1 id="placeName"></h1>
+        </div>
+        <div class="details-content">
+            <div class="main-content">
+                <div id="mainContent"></div>
+                <div class="gallery" id="imageGallery"></div>
+            </div>
+            <div class="sidebar">
+                <div class="info-box">
+                    <h3>Əsas Məlumatlar</h3>
+                    <div id="basicInfo"></div>
+                </div>
+                <div class="info-box">
+                    <h3>İş Saatları</h3>
+                    <div id="workingHours"></div>
+                </div>
+                <div class="info-box">
+                    <h3>Qiymət Aralığı</h3>
+                    <div id="priceRange"></div>
+                </div>
+                <div class="info-box">
+                    <h3>Reytinq</h3>
+                    <div id="rating"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+    <p>&copy; 2025 BackSyntax, created by the AZTU 6424a2 group. All rights not reserved.</p>
+    </footer>
+    <script src="details.js"></script>
+</body>
+</html> 
