@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover Places</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="header">
+      <h1>Discover Places</h1>
+      <div class="header-buttons">
+        <button id="darkModeToggle" class="theme-btn">🌙</button>
+        <a href="profile.html" class="profile-btn">👤</a>
+      </div>
+    </div>
+    <h2>Şəhərlər, restoranlar və parklar haqqında məlumat kəşf edin!</h2>
+  </header>
+  <section class="search-section">
+    <input type="text" id="searchInput" placeholder="Axtar...">
+    <div class="filter-buttons mb-6">
+      <button class="filter-btn active" data-type="all">Hamısı</button>
+      <button class="filter-btn" data-type="city">Şəhərlər</button>
+      <button class="filter-btn" data-type="restaurant">Restoranlar</button>
+      <button class="filter-btn" data-type="park">Parklar</button>
+      <button class="filter-btn" data-type="attraction">Görməli Yerlər</button>
+    </div>
+    <select id="sortSelect">
+      <option value="default">Sıralama</option>
+      <option value="name-asc">Ad (A-Z)</option>
+      <option value="name-desc">Ad (Z-A)</option>
+      <option value="rating">Reytinq</option>
+    </select>
+  </section>
+  <main id="placesContainer" class="places-container"></main>
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <div id="modalDetails"></div>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2025 BackSyntax, created by the AZTU 6424a2 group. All rights not reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html> 
