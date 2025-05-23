@@ -10,7 +10,7 @@ const places = [
     type: 'city',
     name: 'Bakı',
     description: 'Azərbaycanın paytaxtı, müasir və tarixi abidələrlə zəngin.',
-    image: '',
+    image: 'https://bakufreetour.files.wordpress.com/2019/03/1-6-e1553537792133.jpg?w=1024',
     details: 'Bakı, Azərbaycanın paytaxtı və Xəzər dənizinin sahilində yerləşən dinamik bir metropoldur. Qədim İçərişəhər ilə müasir göydələnlərin harmoniya təşkil etdiyi bu şəhər, turistlərə unikal bir təcrübə bəxş edir.İçərişəhər – UNESCO-nun Dünya Mirası siyahısında olan bu tarixi məhəllə, Qız Qalası və Şirvanşahlar Sarayı kimi qədim abidələrlə zəngindir.Flame Towers – Bakının simvolu olan bu üç göydələn gecələr işıq oyunları ilə bürünür və şəhərin ən gözəl mənzərələrindən birini təqdim edir.Bakı Bulvarı – Xəzər sahilində uzanan bu bulvar gəzinti, velosiped və əyləncə mərkəzləri ilə turistlərin ən sevimli yerlərindəndir.Heydər Əliyev Mərkəzi – Zaha Hadidin memarlıq şedevri olan bu bina müasir incəsənət sərgilərinə ev sahibliyi edir.Atəşgah Məbədi – Tarix boyu zərdüştilərin ibadət etdiyi bu məbəd, təbii qaz yanğısı ilə məşhurdur.Yanar Dağ – Heç bir zaman sönməyən təbii alovu ilə turistləri heyran edən bu yer, geoloji bir möcüzədir.Fountain Square (Fəvvarələr Meydanı) – Restoranlar, kafelər və canlı küçə performansları ilə şəhərin ən enerjili yerlərindən biridir.Azərbaycan Milli Mətbəxi – Bakıda düşbərə, plov və qutab kimi ənənəvi ləzzətləri dadmaq üçün Şirvanşah və Firuzə kimi məşhur restoranları ziyarət edə bilərsiniz.',
     address: 'Bakı şəhəri, Azərbaycan',
     workingHours: '24/7',
